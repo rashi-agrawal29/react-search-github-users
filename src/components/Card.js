@@ -17,7 +17,7 @@ const Card = () => {
       <img src={avatar_url} alt={name} />
       <div>
         <h4>{name}</h4>
-        <p>@{twitter_username || 'john doe'}</p>
+        <p>@{twitter_username || 'Twitter id not linked.'}</p>
       </div>
       <a href={html_url}>Follow</a>
     </header>
@@ -25,7 +25,7 @@ const Card = () => {
     <div className='links'>
       <p><MdBusiness></MdBusiness>{company}
       </p>
-      <p><MdLocationOn></MdLocationOn>{location || 'earth'}
+      <p><MdLocationOn></MdLocationOn>{location || 'No location mentioned.'}
       </p>
       <a href={'https://${blog}'}>
         <MdLink></MdLink>

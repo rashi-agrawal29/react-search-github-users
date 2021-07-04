@@ -57,7 +57,7 @@ const Repos = () => {
 
   stars = Object.values(stars).slice(-5).reverse();
   forks = Object.values(forks).slice(-5).reverse();
-  const chartData = [
+  /* const chartData = [
   {
     label: "HTML",
     value: "29"
@@ -70,15 +70,16 @@ const Repos = () => {
     label: "JavaScript",
     value: "160"
   },
-];
-  return (
+]; */
+
+return (
   <section className="section">
     <Wrapper className="section-center">
       {/* <ExampleChart data={chartData}/>; */}
-      <Pie3D data={mostUsed} />
+      <Pie3D data={mostUsed}  />
       <Column3D data={stars}/>
       <Doughnut2D data={mostPopular}/>
-      <Bar3D data={forks}/>
+      <Bar3D data={forks}/> |
     </Wrapper>
   </section>
   );
@@ -107,6 +108,6 @@ const Wrapper = styled.div`
     width: 100% !important;
     border-radius: var(--radius) !important;
   }
-`;
+`
 
 export default Repos;

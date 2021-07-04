@@ -6,7 +6,7 @@ import { FiUsers, FiUserPlus } from 'react-icons/fi';
 
 const UserInfo = () => {
   const {githubUser} = React.useContext(GithubContext);
-  const {public_repos, followers, following, public_gists} = githubUser; //properties in mockUser file i mockdata folder
+  const {public_repos, followers, following, public_gists} = githubUser; //properties in mockUser file in mockdata folder
   
   
   const items = [
